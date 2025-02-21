@@ -1,5 +1,5 @@
 resource "local_file" "test1" {
-  filename = "sample"
+  filename = var.file
   content = "test file"
 }
 
@@ -8,7 +8,7 @@ output "filename" {
 }
 
 resource "local_file" "test2" {
-  filename = "sample2"
+  filename = var.file2
   content = "test file2"
 }
 
