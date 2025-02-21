@@ -6,3 +6,12 @@ resource "local_file" "test1" {
 output "filename" {
   value = local_file.test1.filename
 }
+
+resource "local_file" "test2" {
+  filename = "sample2"
+  content = "test file2"
+}
+
+output "filename2" {
+  value = local_file.test2.filename
+}
